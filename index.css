@@ -152,7 +152,7 @@ height: 500px;
 background :url(http://navyantram.svvv.edu.in/img/slider/navyantram-curved.jpg);
 background-size: 100% auto;
 background-repeat: no-repeat;
-animation:slide 20s infinite;
+animation:slide 28s infinite;
 }
 @keyframes slide{
 	25%{background :url(http://navyantram.svvv.edu.in/img/slider/navyantram-curved.jpg);
@@ -167,4 +167,35 @@ animation:slide 20s infinite;
 	100%{background :url(http://navyantram.svvv.edu.in/img/slider/navyantram-curved.jpg);
 	background-size: 100% auto;
 	background-repeat: no-repeat;}
+}
+.anavyantram{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding-top: 57px;
+  background-color: #d8d2d2;
+  padding-bottom: 57px;
+  z-index: -1;
+}
+.card{
+  display: inline-block;
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  padding: 10px;
+  margin: 35px;
+  width: 20%;
+  height: auto;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card img{
+  width: 20%;
+  background-color: white;
+  padding: 18px;
+  border-radius: 8px;
+}
+.card span{
+  display: block;
 }
