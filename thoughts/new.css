@@ -1,0 +1,33 @@
+.red{
+	transition: width 5s;
+	transition-delay: 1s;
+	height: 200px;
+	width: 200px;
+	background-color: blue;
+}
+.red:hover{
+	transition-timing-function: ease-in-out;
+	width: 100%;
+}
+
+
+
+/*.red2{
+	transform: scale(0.2,0.3);
+	height: 200px;
+	width: 200px;
+	background-color: red;
+
+}
+.red3{
+	transform: translate(50px,100px);
+height: 200px;
+	width: 200px;
+	background-color: green;
+}
+.red4{
+	transform: skew(20deg);
+height: 200px;
+	width: 200px;
+	background-color: yellow;
+}*/

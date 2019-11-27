@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+body{
+	margin: 0px;
+}
+header{
+	padding: 15px;
+	background-color: #196CFF;
+	box-shadow: 12px;
+	border:none;
+	height: 10%;
+	width: 100%;
+}
+.head{
+	display: inline;
+}
+.inhead{
+	display: inline;
+	font-family: 'Questrial', sans-serif;
+	font-weight: bolder;
+	color:#196CFF ; 
+	padding: 8px;
+	border-radius: 100px;
+	background-color: white;
+	margin: 3px;
+}
+.inhead:hover{
+	background-color: black;
+	color: #196CFF;
+}

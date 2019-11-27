@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+<div class="main">
+	<div class="main2">
+
+		<span class="login">Login</span>
+		<span class="userame">username</span>
+		<input type="text" name="username" placeholder="username">
+		<span class="userame">password</span>
+		<input type="password" name="password" placeholder="password">
+		<button class="logb">Login</button>
+	</div>
+</div>
+</body>
+</html>
