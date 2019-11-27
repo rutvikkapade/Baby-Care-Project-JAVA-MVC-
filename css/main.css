@@ -4501,7 +4501,7 @@ dl.accordion.time-line:before {
 .dheads{
   padding: 10px;
   font-family: 'Poppins', sans-serif;
-  font-size: 35px;
+  font-size: 2vw;
   font-weight: bold;
   color: black;
 }
@@ -4552,6 +4552,9 @@ display: block;
     margin: 0px;
     margin-bottom: 20px;
 }
+.dheads{
+  font-size: 25px;
+}
 .faculty{
   margin-top:20px;
   text-align: center;
@@ -4563,6 +4566,7 @@ display: block;
 }
 .sociall{
   padding: 8px;
+  text-align: center;
 }
 .info h4{
   font-family: 'Alatsi', sans-serif;
