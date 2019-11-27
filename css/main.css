@@ -4490,6 +4490,9 @@ dl.accordion.time-line:before {
 }
 
 /*-------- end footer Area -------------*/
+.nav{
+  position: relative;
+}
 .details{
   width: 100%;
   height: auto;
@@ -4524,6 +4527,15 @@ padding: 0;
   margin-top: 20px;
 
 }
+#credit{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   padding: 8px;
+}
+#credit{
+  display: none;
+}
 
 .student{
 display: block;
@@ -4534,6 +4546,9 @@ display: block;
   border-radius: 5px;
 }
 @media (max-width: 997px){
+  #credit{
+    display: block;
+  }
    .info{
     padding: 10px;
   width: auto;
@@ -4545,6 +4560,9 @@ display: block;
 }
 }
 @media (max-width: 776px) {
+  #credit{
+    display: block;
+  }
   .info{
     display: block;
     width: 100%;
