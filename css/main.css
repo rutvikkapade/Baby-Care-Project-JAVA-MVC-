@@ -4496,12 +4496,20 @@ dl.accordion.time-line:before {
 .details{
   width: 100%;
   height: auto;
-  background-color: #fff;
   padding: 1px;
   margin: 0;
   text-align: center;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .dheads{
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2vw;
+  font-weight: bold;
+  color: black;
+}
+.dheads2{
   padding: 10px;
   font-family: 'Poppins', sans-serif;
   font-size: 2vw;
@@ -4544,6 +4552,7 @@ display: block;
   width: auto;
   height: 200px;
   border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media (max-width: 997px){
   #credit{
@@ -4594,10 +4603,9 @@ display: block;
 
 }
 #ss{
-  width: 20px;
+  width: 35px;
   height: auto;
+  padding: 4px;
+  line-height: 5px;
 }
-.info:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 5px;
-}
+
