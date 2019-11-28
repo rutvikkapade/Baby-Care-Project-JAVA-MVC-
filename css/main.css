@@ -2450,7 +2450,7 @@ background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
 }
 
 .banner-area .fullscreen {
-  height: 750px !important;
+  height: 780px !important;
 }
 
 .banner-left h6 {
@@ -4630,7 +4630,16 @@ display: block;
    font-family: 'Questrial', sans-serif;
 
 }
+.test12{
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
 @media (max-width: 776px) {
+  .test12{
+    width: 65%;
+    height: auto;
+  }
   .pics{
     width: 100%;
     height: auto;
