@@ -4576,6 +4576,7 @@ display: block;
   height:auto;
   padding: 10px;
   text-align: center;
+  line-height: 100px;
   
 }
 .pics{
@@ -4638,7 +4639,7 @@ display: block;
 }
 @media (max-width: 776px) {
   .test12{
-    width: 65%;
+    width: 55%;
     height: auto;
   }
   .pics{
