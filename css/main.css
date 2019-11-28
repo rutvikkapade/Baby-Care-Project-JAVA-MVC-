@@ -4631,6 +4631,18 @@ display: block;
   height: auto;
   text-align: center;
 }
+.mapmain{
+  padding: 0px;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+.map{
+  height: 400px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 @media (max-width: 776px) {
   .photos{
     width: 100%;
