@@ -162,7 +162,33 @@ NAVYANTRAM is the most spectacular robotics event and competition at various lev
 					</div>
 				</div>	
 			</section>
-			<!-- End services Area -->	
+			<!-- End services Area -->
+			<section class="pph">
+				<br>
+				<span class="dheads">Navyantram 2K19</span>
+				<br>
+				<div class="photos">
+					<img class="pics" src="img/pic1.jpg">
+					<img class="pics" src="img/pic2.jpg">
+					<img class="pics" src="img/pic3.jpg">
+					<img class="pics" src="img/pic4.jpg">
+					<img class="pics" src="img/pic5.jpg">
+					<img class="pics" src="img/pic6.jpg">
+					<img class="pics" src="img/pic7.jpg">
+				</div>
+				<div class="nv19">
+					<p class="textt">
+						Navyantram 2k19 was held succesfuly with all the events taking place ,systematically and properly.
+						Major guests and judges came to support and the event ,to increse overall 
+						spirit of the participants.
+						Major sponsors made this event possible.
+						Here are some previous year snaps of Navyantram 2K19!
+					</p>
+				</div>
+			</section>	
+			<br>
+			<br>
+
 			<section class="details">
 				<span class="dheads">Faculty Co-Ordinators</span>
 				<div class="faculty">
@@ -212,9 +238,6 @@ NAVYANTRAM is the most spectacular robotics event and competition at various lev
 						</div>
 					</div>
 				</div>
-				
-				
-				
 			</section>
 
 			<!-- Start fact Area -->
@@ -698,5 +721,21 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			<script src="js/owl.carousel.min.js"></script>							
 			<script src="js/mail-script.js"></script>	
 			<script src="js/main.js"></script>	
-		</body>
+			<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("pics");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
+	</body>
 	</html>
