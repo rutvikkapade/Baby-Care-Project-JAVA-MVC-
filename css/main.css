@@ -4518,7 +4518,7 @@ display: block;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   font-size: 5vw;
-
+  color: #f40944;
 }
 .ts{
   font-size: 1vw;
@@ -4526,10 +4526,13 @@ display: block;
 }
 .os{
   font-size: 2vw;
+  font-weight: bold;
+  color: #2B093F;
 }
 .onee p{
   font-size: 15px;
   width: 50%;
+  color: black;
 }
 @media (max-width: 776px) {
   .onee{
