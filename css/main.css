@@ -4572,12 +4572,9 @@ display: block;
 }
 .photos{
   display: inline-block;
-  width: 40%;
+  width: 65%;
   height:auto;
   padding: 10px;
-  text-align: center;
-  line-height: 100px;
-  
 }
 .pics{
   display: none;
@@ -4587,17 +4584,14 @@ display: block;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .nv19{
-  display: inline-block;
-  width: 50%;
+  padding: 10px;
+  display: block;
   height: auto;
-  text-align: center;
-  top: 50%;
 }
 .textt{
-  line-height: 50px;
-  top: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
 }
-
 @media (max-width: 997px){
   .bannerr{
     display: block;
@@ -4638,6 +4632,10 @@ display: block;
   text-align: center;
 }
 @media (max-width: 776px) {
+  .photos{
+    width: 100%;
+    height: auto;
+  }
   .test12{
     width: 55%;
     height: auto;
