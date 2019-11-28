@@ -4493,7 +4493,55 @@ display: block;
   margin: 0;
   padding: 0;
 }
+.onee{
+  top: 50%;
+  padding: 8px;
+  text-align: left;
+  display: inline-block;
+  width: 50%;
+  height: auto;
+  padding: 8px;
+  float: left;
+  position: static;
+  overflow: auto;
+}
+.faq{
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 25px;
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  float: left; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.faqh{
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 5vw;
+
+}
+.ts{
+  font-size: 1vw;
+  font-weight: bold;
+}
+.os{
+  font-size: 2vw;
+}
+.onee p{
+  font-size: 15px;
+  width: 50%;
+}
 @media (max-width: 776px) {
+  .onee{
+    display: block;
+    width: 100%;
+  }
+  .ts{
+    font-size: 2vw;
+  }
+  .os{
+    font-size: 5vw;
+  }
   .photos{
     width: 100%;
     height: auto;
@@ -4560,3 +4608,5 @@ display: block;
   margin-right: 35px;
   margin-left: 35px;
 }
+
+
