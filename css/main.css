@@ -1,4 +1,3 @@
-
 ::-moz-selection {
   
   background-color: #8490ff;
@@ -2363,7 +2362,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 10px;
 }
 .banner-area {
-background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+   background: #12c2e9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(-45deg, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(-45deg, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  background-size: 600% 100%;
+  animation: gradientBG 15s ease infinite;
 }
 
 .banner-area .fullscreen {
@@ -4510,15 +4515,29 @@ display: block;
   width: 100%;
   height: auto;
   padding: 25px;
-  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 600% 100%;
+  animation: gradientBG 15s ease infinite;
   float: left; 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .faqh{
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   font-size: 5vw;
-  color: #f40944;
+  color: #fff;
 }
 .ts{
   font-size: 1vw;
