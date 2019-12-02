@@ -4514,6 +4514,14 @@ background: linear-gradient(45deg, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Fire
   position: static;
   overflow: auto;
 }
+.connect{
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 12px;
+  text-align: center;
+  background-color: #6B92AB;
+}
 .faq{
   display: block;
   width: 100%;
