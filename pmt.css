@@ -16,14 +16,7 @@ body{
 	border-radius: 20px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-@media (max-width: 776px){
-	.main{
-		width: 75%;
-	}
-	.card{
-		width:100%;
-	}
-}
+
 .subheadingg{
 	font-size: 20px;
 }
@@ -89,7 +82,14 @@ span{
 	font-weight: bolder;
 	color: blue;
 }
-
+@media (max-width: 776px){
+	.main{
+		width: 75%;
+	}
+	.card{
+		width:100%;
+	}
+}
 @keyframes gradientBG {
   0% {
     background-position: 0% 50%;
