@@ -1,0 +1,102 @@
+body{
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  	background-size: 600% 500%;
+  	animation: gradientBG 15s ease infinite;
+}
+.main{
+	margin: 0;
+	text-align: center;
+	width: 50%;
+	height: auto;
+	background-color: white;
+	left: 0;
+	right: 0;
+  	padding: 24px;
+	margin: auto;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.subheadingg{
+	font-size: 20px;
+}
+.headingg{
+	font-size: 25px;
+	font-weight: bold;
+}
+.subsubheadingg{
+	font-weight: bold;
+	font-size: 25px;
+	color: red;
+}
+#test{
+	background-color: cyan;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn{
+	padding: 10px;
+	border-radius: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	font-size: 15px;
+	background: linear-gradient(347deg, #ba0acc, #cc250a);
+	background-size: 600% 500%;
+	animation: gradientBG 15s ease infinite;
+	font-family: 'Montserrat', sans-serif;
+	border: none;
+
+}
+.btn:hover{
+	background: none;
+	background-color: black;
+	color: orange;
+}
+.one{
+	color: red;
+}
+.stat{
+	color: blue;
+}
+.card{
+	padding: 12px;
+	width: 25%;
+}
+.card  img{
+	width: 85%;
+}
+span{
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+}
+.card{
+	display: inline-block;
+}
+.payment{
+	text-align: center;
+}
+.payment ul li{
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+	color: blue;
+}
+@media (max-width: 776px) {
+	.card{
+		width: 100%;
+	}
+	.main{
+		width: 75%;
+	}
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
