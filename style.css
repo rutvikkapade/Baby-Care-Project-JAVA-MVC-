@@ -43,6 +43,7 @@ body{
 	overflow: hidden;
 }
 .heading{
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	padding: 8px;
 	text-align: center;
 	font-size: 45px;
@@ -67,6 +68,7 @@ body{
 }
 
 .content p{
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	padding: 8px;
 	border-radius: 5px;
 	display: inline-flex;
@@ -92,6 +94,7 @@ body{
 	background-color: white;
 }
 .content button{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	color: white;
 	border: none;
 	border-radius: 8px;
