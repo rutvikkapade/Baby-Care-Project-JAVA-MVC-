@@ -82,17 +82,19 @@ body{
 	display: none;
 }
 .content label{
+
+	opacity: 0.6;
 	border-radius: 8px;
 	padding: 8px;
 	font-size: 18px;
-	color: white;
+	color: #918F8F;
 	font-family: 'Alata', sans-serif;
-	background-color: #D82525;
-}
-.content label:hover{
-	color:#D82525;
 	background-color: white;
 }
+/*.content label:hover{
+	color:#D82525;
+	background-color: white;
+}*/
 .content button{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	color: white;
