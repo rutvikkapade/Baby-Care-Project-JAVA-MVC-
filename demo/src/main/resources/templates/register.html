@@ -1,0 +1,178 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<title></title>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style type="text/css">
+	body{
+		margin: 0;
+	}
+		.navigation{
+		margin: 0;
+		padding: 10px;
+		background-color: #e7eff6;
+		transition: background-color 1s;
+	}
+		}
+	.navigation:hover{
+		background-color: white;
+	}
+	#nav{
+		text-decoration: none;
+		padding: 8px;
+		font-family: 'Roboto', sans-serif;
+		color: #145fa7;
+		font-weight: bold;
+		height: 5%;
+		transition: margin 1s;
+	}
+	#nav:hover{
+		color:black;
+	}
+	input{
+		padding: 5px;
+		outline: none;
+		font-size: 20px;
+		text-align: center;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+	#inputt{
+		margin: 10px;
+		border-radius: 8px;
+		background-color: #e7eff6;
+		height: 40px;
+		border:none;
+}
+#inputt1{
+		margin: 10px;
+		border-radius: 8px;
+		background-color: #e7eff6;
+		height: 40px;
+		border:none;
+}
+#inputt2{
+		margin: 10px;
+		border-radius: 8px;
+		background-color: #e7eff6;
+		height: 40px;
+		border:none;
+}
+#inputt3{
+		margin: 10px;
+		border-radius: 8px;
+		background-color: #e7eff6;
+		height: 40px;
+		border:none;
+}
+::placeholder {
+	font-size: 20px;
+text-align: center;
+color: #747576;
+font-family: 'Roboto', sans-serif; 
+}
+#submit{
+margin-top: 10px;
+border-radius: 8px;
+border:none;
+color: white;
+font-size: 20px;
+background-color: #137ee1;
+font-family: 'Roboto', sans-serif; 
+}
+#submit:hover{
+	background-color: green;
+}
+.fholder{
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 20px;
+	background-color:#145fa7 ;
+	width: 300px;
+	margin-top: 12%;
+}
+@media only screen and (max-width: 600px){
+	.navigation{
+		text-align: center;
+	}
+	.fholder{
+		margin-top: 15%;
+		box-shadow: none;
+	}
+	body{
+		background-color: #145fa7;
+	}
+}
+</style>
+<body>
+	<div class="navigation">
+		<a id="nav" href="/choose">Home</a>
+		<a id="nav" href="/allnames1">Names</a>
+		<a id="nav" href="/products1">Products</a>
+		<a id="nav" href="/login">Admin Login</a>
+		
+	</div>
+	<section class="container">
+		<center>
+		<div class="fholder">
+			<h1 style="font-family: 'Roboto', sans-serif; color: white;">Register By Entering Your Details</h1>
+			<form th:action="@{/register}" th:object="${register}" method="post">
+				<input id="inputt" placeholder="First Name"  onclick="thisv1()" type="text" th:field="*{fname}" >
+				<br>
+				<input id="inputt1" placeholder="Last Name" onclick="thisv2()" type="text" th:field="*{lname}">
+				<br>
+				<input id="inputt2" placeholder="Email" onclick="thisv3()" type="text" th:field="*{email}">
+				<br>
+				<input placeholder="Password" id="inputt3" onclick="thisv4()" type="text" th:field="*{pass}">
+				<br>
+				<input type="submit" id="submit" name="Submit" value="Submit">
+			</form>
+		</div></center>
+	</section>
+</body>
+<script>
+	function thisv1() {
+		document.getElementById('inputt').style.background="rgba(255,255,255)";
+		document.getElementById('inputt').style.border="1px solid black";
+		document.getElementById('inputt1').style.background="rgba(238,242,246)";
+		document.getElementById('inputt1').style.border="none";
+		document.getElementById('inputt2').style.background="rgba(238,242,246)";
+		document.getElementById('inputt2').style.border="none";
+		document.getElementById('inputt3').style.background="rgba(238,242,246)";
+		document.getElementById('inputt3').style.border="none";
+	}
+	function thisv2(){
+		document.getElementById('inputt1').style.background="rgba(255,255,255)";
+		document.getElementById('inputt1').style.border="1px solid black";
+		document.getElementById('inputt2').style.background="rgba(238,242,246)";
+		document.getElementById('inputt2').style.border="none";
+		document.getElementById('inputt3').style.background="rgba(238,242,246)";
+		document.getElementById('inputt3').style.border="none";
+		document.getElementById('inputt').style.background="rgba(238,242,246)";
+		document.getElementById('inputt').style.border="none";
+	}
+	function thisv3(){
+		document.getElementById('inputt2').style.background="rgba(255,255,255)";
+		document.getElementById('inputt2').style.border="1px solid black";
+		document.getElementById('inputt3').style.background="rgba(238,242,246)";
+		document.getElementById('inputt3').style.border="none";
+		document.getElementById('inputt').style.background="rgba(238,242,246)";
+		document.getElementById('inputt').style.border="none";
+		document.getElementById('inputt1').style.background="rgba(238,242,246)";
+		document.getElementById('inputt1').style.border="none";
+	}
+	function thisv4() {
+		document.getElementById('inputt3').style.background="rgba(255,255,255)";
+		document.getElementById('inputt3').style.border="1px solid black";
+		document.getElementById('inputt').style.background="rgba(238,242,246)";
+		document.getElementById('inputt').style.border="none";
+		document.getElementById('inputt2').style.background="rgba(238,242,246)";
+		document.getElementById('inputt2').style.border="none";
+		document.getElementById('inputt1').style.background="rgba(238,242,246)";
+		document.getElementById('inputt1').style.border="none";
+	}
+	window.location.hash="no-back-button";
+window.location.hash="Again-No-back-button";
+window.onhashchange=function(){window.location.hash="no-back-button";}
+</script>
+</html>

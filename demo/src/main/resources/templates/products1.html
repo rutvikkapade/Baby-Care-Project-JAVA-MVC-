@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+	body{
+		margin:0;
+	}
+	.navigation{
+		width: 100%;
+		margin: 0;
+		background-color: #e7eff6;
+		transition: background-color 1s;
+		height: 30px;
+	}
+	#nav{
+		background:none;
+		border: none;
+		text-decoration: none;
+		padding: 12px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 15px;
+		color: #145fa7;
+		font-weight: bold;
+		height: 5%;
+	}
+	#nav:hover{
+		color:black;
+	}
+	#menu{
+		width: 0;
+		position: absolute;
+		z-index: 1;
+		background-color: #145fa7;
+		height: 100%;
+		transition: width 0.5s;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	.navForm{
+		display: inline;
+		padding: 0;
+		margin: 0;
+	}
+	.sliderForm{
+		width: 90%;
+		margin: 0;
+		padding: 0;
+		margin: 15px;
+	}
+	.sliderInput{
+		margin: 0;
+		width: 90%;
+		background-color: white;
+		border: none;
+		border-radius: 10px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+		padding: 10px;
+		font-size: 15px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	#sliderInput1{
+		display: none; 
+	}
+	#sliderInput2{
+		display: none;
+	}
+	#sliderInput3{
+		display: none;
+	}
+	#navimg{
+		padding: 10px;
+		width: 30px;
+		height: auto;
+		background-color: #145fa7;
+		border: none;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		border-radius:0 0 50% 0;
+	}
+	#navimg2{
+		display: none;
+		background-color: white;
+		padding: 5px;
+		width: 12%;
+		height: auto;
+		border: none;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		margin: 15px;
+		border-radius: 50% 50%;
+	}
+	.userinfo{
+		box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 1px 0 rgba(0, 0, 0, 0.19);
+		text-align: right;
+		background-color: #e7eff6;
+	}
+		.subcontainer{
+		width: 100%;
+		text-align: center;
+		height: 100%;
+	}
+	.card{
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+		display:inline-block;
+		width: 10%;
+		height: auto;
+		background-color:  #145fa7;
+		box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 1px 0 rgba(0, 0, 0, 0.19);
+		
+	}
+	.cimg{
+		width:100%; 
+		background-color: white;
+		border: none;
+		border-radius: 50% 50%;
+		display: block;
+		height: auto;	
+		box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 1px 0 rgba(0, 0, 0, 0.19);
+	}
+	.l1{
+		text-decoration: none;
+		padding: 3px;
+		color: white;
+		font-weight: bold;
+		font-family: 'Roboto', sans-serif;
+		display: block;
+		font-size:25px;
+	}
+	.welcomee{
+		display: inline;
+		font-weight: bold;
+		margin-left: 5px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 25px;
+	}
+	iframe{
+		margin: 10px;
+		background-color: #2D3F50;
+}
+	.babyCare{
+		background-color: #729FCA;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	}
+	.pheading{
+		margin:10px;
+		border:none;
+		border-radius: 5px;
+		padding: 10px;
+		color: white;
+		background-color: #729FCA;
+		font-size: 25px;
+		font-weight:bold;
+		font-family: 'Roboto', sans-serif;
+	}
+	.products{
+		text-align: center;
+	}
+	.container{
+		margin-top: 45px;
+	}
+	@media only screen and (max-width: 600px){
+	#nav{
+		font-size: 20px;
+		padding: 5px;
+	}
+	#navimg{
+		width: 10%;
+	}
+	.navigation{
+		text-align: center;
+	}
+	.card{
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+		display:inline-block;
+		width: 25%;
+		height: auto;
+		background-color:  #145fa7;
+		
+	}
+	.l1{
+		font-size: 15px;
+	}
+	.welcomee{
+		font-size: 12px;
+	}
+}
+</style>
+<body>
+<div class="navigation">
+		<a id="nav" href="/choose">Home</a>
+		<a id="nav" href="/allnames1">Names</a>
+		<a id="nav" href="products1">Products</a>
+		<a id="nav" href="/register">Register</a>
+</div>
+<section class="container" id="c2">
+	<div class="products">
+		<label class="pheading">Baby Care</label>
+		<div class="babyCare">
+			<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B00H5NMNXC&asins=B00H5NMNXC&linkId=7c71887cd2a239d76d9d7532d7de66c2&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    		</iframe>
+    		<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B008YD57OO&asins=B008YD57OO&linkId=68a67b15c7885108621192b14b5364e8&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B07BGT4J55&asins=B07BGT4J55&linkId=0cf91a25c71b978bd248ff9db2c1bb3b&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B00NOKRPD8&asins=B00NOKRPD8&linkId=fd9c65f80b5af82cf6767f0b88e7c1b8&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B00NOKRPD8&asins=B00NOKRPD8&linkId=fd9c65f80b5af82cf6767f0b88e7c1b8&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B0169R7SFM&asins=B0169R7SFM&linkId=3622654fc237dc88469e4e0cb16ad8e9&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B07PSJW32L&asins=B07PSJW32L&linkId=8f2c89e690c9cf1729c91b43ebdec65b&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B07Q2B5Z9D&asins=B07Q2B5Z9D&linkId=5e72e0db018c4728541ee66a8b8ad689&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B01NBEF38B&asins=B01NBEF38B&linkId=a3b3b7e9d45045b9b7f614e16547dffa&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B00VEEHIEM&asins=B00VEEHIEM&linkId=2e6e3afb6ab344dfd88c8811acab5e2e&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+		</div>
+		<br>
+		<label class="pheading">Baby Shoes</label>
+		<div class="babyCare" >
+			<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B087BP5J27&asins=B087BP5J27&linkId=d17875958d18c05865498d24d5dd2fea&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B087BP15NR&asins=B087BP15NR&linkId=e25f12ef383c597263baf13a59f00166&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B087BN7F81&asins=B087BN7F81&linkId=95bbc74e8580ae2f7c134f851dedad2f&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B087BMRY7V&asins=B087BMRY7V&linkId=aaca1fd3ab046e1969e5b55c166af343&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B087BJKFCB&asins=B087BJKFCB&linkId=dc5ea4485aa85c76c286abc3e8a69ca4&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B087BC8H37&asins=B087BC8H37&linkId=43a6a274315aa7e8519f723acf1ad7f1&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B087B8DMX2&asins=B087B8DMX2&linkId=c14d3dc36915ef5ff971607dedb0a64b&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B087B7XSVL&asins=B087B7XSVL&linkId=aa3751431e979d0704a8b3352645bc55&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B087B7GDWX&asins=B087B7GDWX&linkId=64ec224b832705a1b1e5da7b5e13b5d2&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B087B7FRWS&asins=B087B7FRWS&linkId=e1630d8132f7c403f186838ffa4d8f51&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+		</div>
+		<br>
+		<label class="pheading">Baby Food</label>
+		<div class="babyCare">
+			<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B01N362DN7&asins=B01N362DN7&linkId=fb4b88a73e468c01ac2ba130ca1b91e9&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B0799G72T4&asins=B0799G72T4&linkId=266708986ede113a1f62b3fbfadcae5f&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B00FPSNGDK&asins=B00FPSNGDK&linkId=1d7f6fc09af590fbec82a41382ee8869&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B00MVVEREQ&asins=B00MVVEREQ&linkId=bb0d155f18c0869e7fbc7e2ba6c9db4d&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B017XL39DI&asins=B017XL39DI&linkId=d6cdbbe24041fbb500db24a44631eb08&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B07ZHKSHQF&asins=B07ZHKSHQF&linkId=a92af8577b91742c249dd60204e378d9&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B07DM8V3KS&asins=B07DM8V3KS&linkId=69b39d7b9797708ea41e10c980030f26&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B00I4SYXIK&asins=B00I4SYXIK&linkId=8cee30e701b8b6823293fcf77d4f7d35&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B078FH7DVD&asins=B078FH7DVD&linkId=829b0032b9a4408f9e4f17bf8ed2cece&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B00I4SYZU6&asins=B00I4SYZU6&linkId=3d1a88b4a37c0f5da7bddc042e6cd34f&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B07VFCM2NY&asins=B07VFCM2NY&linkId=c104b811091fdb616b748b08d0a4ec18&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=rutvik609-21&marketplace=amazon&region=IN&placement=B078B4377N&asins=B078B4377N&linkId=7b5491b593faaa205d7edd110c5d89b3&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+		</div>
+
+		
+	</div>
+</section>
+
+</body>
+</html>

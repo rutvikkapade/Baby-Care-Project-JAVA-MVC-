@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title></title>
+	<meta http-equiv = "refresh" content = "60"; url ="/print" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<style type="">
+	body{
+		background-color: white;
+	}
+	.container{
+		text-align: center;
+	}
+	table{
+		font-family: 'Roboto', sans-serif;
+		width: 25%;
+		border:1px solid black;
+		margin-bottom: 25px;
+	}
+	tr{
+		border:1px solid black;
+	}
+	th{
+		background-color: #4CA3DD;
+		border:1px solid black;
+	}
+	td{
+		text-align: center;
+		border:1px solid black;
+	}.tholder{
+		width: 100%;
+	}
+	#refresh{
+		text-decoration: none;
+		padding: 5px;
+		font-family: 'Roboto', sans-serif;
+		background-color: #1E4158;
+		color: white;
+		border-radius: 5px;
+		font-size: 25px;
+	}
+	#refresh:hover{
+		background-color: black;
+		color: orange;
+	}
+</style>
+<body>
+<section class="container">
+<center><div class="tholder">
+<center><table>
+		<thead>
+			<tr>
+				<th>Name ID</th>
+				<th>Baby Name</th>
+				<th>Religion</th>
+				<th>Location</th>
+			</tr>
+		</thead>
+		<tbody>
+    <tr th:if="${items.empty}">
+            <td colspan="2"> Nothing available </td>
+        </tr>
+        <tr th:each="item : ${items}">
+            <td><span th:text="${item.id}"> id</span></td>
+            <td><span th:text="${item.name}"> name </span></td>
+            <td><span th:text="${item.religion}"> religion </span></td>
+            <td><span th:text="${item.location}"> location </span></td>
+        </tr>
+    </tbody>
+	</table></center>		
+	<a href="/print" id="refresh">Refresh</a>
+</div></center>
+</section>
+</body>
+</html>

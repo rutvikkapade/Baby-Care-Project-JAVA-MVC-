@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+	body{
+		margin: 0;
+	}
+		.navigation{
+		margin: 0;
+		padding: 10px;
+		background-color: #e7eff6;
+		transition: background-color 1s;
+	}
+		}
+	.navigation:hover{
+		background-color: white;
+	}
+	#nav{
+		text-decoration: none;
+		padding: 8px;
+		font-family: 'Roboto', sans-serif;
+		color: #145fa7;
+		font-weight: bold;
+		height: 5%;
+		transition: margin 1s;
+	}
+	#nav:hover{
+		color:black;
+	}
+	.container{
+		text-align: center;
+	}
+	table{
+		font-family: 'Roboto', sans-serif;
+		width: 40%;
+		border:1px solid black;
+		margin-bottom: 25px;
+	}
+	tr{
+		border:1px solid black;
+	}
+	th{
+		background-color: #4CA3DD;
+		border:1px solid black;
+	}
+	td{
+		text-align: center;
+		border:1px solid black;
+	}.tholder{
+		width: 100%;
+	}
+	#refresh{
+		text-decoration: none;
+		padding: 5px;
+		font-family: 'Roboto', sans-serif;
+		background-color: #1E4158;
+		color: white;
+		border-radius: 5px;
+		font-size: 25px;
+	}
+	#refresh:hover{
+		background-color: black;
+		color: orange;
+	}
+</style>
+<body>
+<div class="navigation">
+		<a id="nav" href="/choose">Home</a>
+		<a id="nav" href="/allnames1">Names</a>
+		<a id="nav" href="products1">Products</a>
+		<a id="nav" href="/register">Register</a>
+</div>
+<section class="container">
+<center><div class="tholder">
+<center><table>
+		<thead>
+			<tr>
+				<th>Name ID</th>
+				<th>Baby Name</th>
+				<th>Religion</th>
+				<th>Location</th>
+			</tr>
+		</thead>
+		<tbody>
+    <tr th:if="${items.empty}">
+            <td colspan="2"> Nothing available </td>
+        </tr>
+        <tr th:each="item : ${items}">
+            <td><span th:text="${item.id}"> id</span></td>
+            <td><span th:text="${item.name}"> name </span></td>
+            <td><span th:text="${item.religion}"> religion </span></td>
+            <td><span th:text="${item.location}"> location </span></td>
+        </tr>
+    </tbody>
+	</table></center>		
+	<a href="/print" id="refresh">Refresh</a>
+</div></center>
+</section>
+</body>
+</html>

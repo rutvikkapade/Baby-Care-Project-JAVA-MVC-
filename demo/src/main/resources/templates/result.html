@@ -1,0 +1,25 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<title></title>
+<head>
+	
+</head>
+<style type="text/css">
+	
+</style>
+<body>
+	<div class="navigation">
+		<a href="">Home</a>
+		<a href="">Names</a>
+		<a href="">Products</a>
+		<a href="">Admin</a>
+	</div>
+	<section class="container">
+		<div class="fholder">
+			<label>FIRST NAME: </label><p th:text="${register.fname}" />
+			<label>LAST NAME: </label><p th:text="${register.lname}" />
+			<label>EMAIL: </label><p th:text="${register.email}" />
+			<label>PASSWORD: </label><p th:text="${register.pass}" />
+		</div>
+	</section>
+</body>
+</html>
