@@ -9,7 +9,7 @@ import java.util.Random;
 
 
 @Service
-public class Dbservice<list> {
+public class Dbservice{
     String url= System.getenv("DBHOSTNAME");
     String user=System.getenv("DBUSERNAME");
     String pass=System.getenv("DBPASSWORD");

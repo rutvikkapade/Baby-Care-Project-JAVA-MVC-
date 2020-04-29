@@ -1,5 +1,6 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
 </head>
 <style>
@@ -61,19 +62,30 @@
 	background-color: white;
 	padding: 5px;
 }
+    @media only screen and (max-width: 600px){
+        label{
+            font-size: 30px;
+        }
+        #madeon{
+            font-size: 25px;
+        }
+        #btn{
+            font-size: 15px;
+        }
+    }
 </style>
     <body>
-        <div class="one">
+        <div class="one" id="one">
         	<div class="inside">
-        		<label>THE</label>
+        		<label>BABY</label>
         		<BR>
-        		<label>INFANT</label>
+        		<label>CARE</label>
         		<br>
-        		<label>SAPIFIER</label>
+        		<label>PROJECT</label>
         		<br>
         		<br>
         		<form action="#" th:action="@{/choose}">
-        			<input type="submit" class="btn">
+        			<input type="submit" class="btn" value="ENTER !">
         		</form>
         		
         		<br>
