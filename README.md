@@ -21,6 +21,8 @@ Lesser production time
 What is Spring Boot?
 Spring Boot provides a good platform for Java developers to develop a stand-alone and production-grade spring application that you can just run. You can get started with minimum configurations without the need for an entire Spring configuration setup.
 
+![](images/arch.png)
+
 Advantages
 Spring Boot offers the following advantages to its developers −
 
@@ -60,25 +62,25 @@ Spring Boot Starters
 Handling dependency management is a difficult task for big projects. Spring Boot resolves this problem by providing a set of dependencies for developers convenience.
 
 For example, if you want to use Spring and JPA for database access, it is sufficient if you include spring-boot-starter-data-jpa dependency in your project.
+Note that all Spring Boot starters follow the same naming pattern spring-boot-starter- *, where * indicates that it is a type of the application .
 
-Note that all Spring Boot starters follow the same naming pattern spring-boot-starter- *, where * indicates that it is a type of the application.
-                                                        APPLICATION OVERVIEW 
+APPLICATION OVERVIEW 
 
 HOME PAGE
-![](index.png) 
+![](images/index.png) 
 NAVIGATION PAGE
- ![](choose.png) 
+ ![](images/choose.png) 
 REGISTRATION PAGE ADMIN
-![](register.png) 
+![](images/register.png) 
 LOGIN PAGE
-![](login.png)
+![](images/login.png)
 USER LOGGED IN PAGE
-![](user.png)
+![](images/user.png)
 ADD NEW BABY NAME 
-![](newname.png)
+![](images/newname.png)
 USER CONTRIBUTION PAGE
-![](contribution.png) 
+![](images/contribution.png) 
 DATA FLOW DIAGRAM
-![](u1.png) 
+![](images/u1.png) 
 UML DIAGRAM
-![](u2.png) 
+![](images/u2.png) 
