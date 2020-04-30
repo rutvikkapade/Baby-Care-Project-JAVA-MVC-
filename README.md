@@ -62,4 +62,23 @@ Handling dependency management is a difficult task for big projects. Spring Boot
 For example, if you want to use Spring and JPA for database access, it is sufficient if you include spring-boot-starter-data-jpa dependency in your project.
 
 Note that all Spring Boot starters follow the same naming pattern spring-boot-starter- *, where * indicates that it is a type of the application.
+                                                        APPLICATION OVERVIEW 
 
+HOME PAGE
+![](index.png) 
+NAVIGATION PAGE
+ ![](choose.png) 
+REGISTRATION PAGE ADMIN
+![](register.png) 
+LOGIN PAGE
+![](login.png)
+USER LOGGED IN PAGE
+![](user.png)
+ADD NEW BABY NAME 
+![](newname.png)
+USER CONTRIBUTION PAGE
+![](contribution.png) 
+DATA FLOW DIAGRAM
+![](u1.png) 
+UML DIAGRAM
+![](u2.png) 
